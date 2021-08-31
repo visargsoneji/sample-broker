@@ -1,0 +1,14 @@
+{
+    "service_id": "string",
+    "plan_id": "string",
+    "dashboard_url": "string",
+    "parameters": {},
+    "maintenance_info": {
+      "version": "string",
+      "description": "string"
+    },
+    "metadata": {
+      "labels": {},
+      "attributes": {}
+    }
+  }

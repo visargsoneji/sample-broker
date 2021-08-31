@@ -1,0 +1,56 @@
+{
+    "services": [
+      {
+        "name": "myservice",
+        "id": "string",
+        "description": "string",
+        "tags": [
+          "string"
+        ],
+        "requires": [
+          "syslog_drain"
+        ],
+        "bindable": true,
+        "metadata": {},
+        "dashboard_client": {
+          "id": "string",
+          "secret": "string",
+          "redirect_uri": "string"
+        },
+        "binding_rotatable": true,
+        "plan_updateable": true,
+        "plans": [
+          {
+            "id": "string",
+            "name": "string",
+            "description": "string",
+            "metadata": {},
+            "maintenance_info": {
+              "version": "string",
+              "description": "string"
+            },
+            "free": true,
+            "bindable": true,
+            "schemas": {
+              "service_instance": {
+                "create": {
+                  "parameters": {}
+                },
+                "update": {
+                  "parameters": {}
+                }
+              },
+              "service_binding": {
+                "create": {
+                  "parameters": {}
+                }
+              }
+            },
+            "maximum_polling_duration": 0,
+            "plan_updateable": true,
+            "binding_rotatable": false
+          }
+        ]
+      }
+    ]
+  }
