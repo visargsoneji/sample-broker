@@ -1,33 +1,16 @@
 {
-    "metadata": {
-      "expires_at": "string",
-      "renew_before": "string"
-    },
-    "credentials": {},
-    "syslog_drain_url": "string",
-    "route_service_url": "string",
-    "volume_mounts": [
-      {
-        "driver": "string",
-        "container_dir": "string",
-        "mode": "r",
-        "device_type": "shared",
-        "device": {
-          "volume_id": "string",
-          "mount_config": {}
-        }
-      }
-    ],
-    "endpoints": [
-      {
-        "host": "string",
-        "ports": [
-          "string"
-        ],
-        "protocol": "tcp"
-      }
-    ],
-    "parameters": {}
+  "credentials": {
+    "uri": "mysql://mysqluser:pass@mysqlhost:3306/dbname",
+    "username": "mysqluser",
+    "password": "pass",
+    "host": "mysqlhost",
+    "port": 3306,
+    "database": "dbname"
+  },
+  "endpoints": [
+    {
+      "host": "mysqlhost",
+      "ports": ["3306"]
+    }
+  ]
 }
-  
-  
