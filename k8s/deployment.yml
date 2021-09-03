@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-broker-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: go-broker-app
+  template:
+    metadata:
+      labels:
+        name: go-broker-app
+    spec:
+      containers:
+      - name: broker-app-container
+        image: visargsoneji/go-simple-broker
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 3278
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: "1"

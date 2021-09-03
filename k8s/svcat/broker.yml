@@ -1,0 +1,6 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ClusterServiceBroker
+metadata:
+  name: visargbroker4
+spec:
+        url: http://10.104.243.160:80
