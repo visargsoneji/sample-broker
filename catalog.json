@@ -1,9 +1,9 @@
 {
     "services": [
       {
-        "name": "myservice",
-        "id": "string",
-        "description": "string",
+        "name": "redis",
+        "id": "service-11",
+        "description": "REDIS",
         "tags": [
           "string"
         ],
@@ -21,9 +21,39 @@
         "plan_updateable": true,
         "plans": [
           {
-            "id": "string",
-            "name": "string",
-            "description": "string",
+            "id": "plan1a",
+            "name": "basic",
+            "description": "A Basic plan for REDIS",
+            "metadata": {},
+            "maintenance_info": {
+              "version": "string",
+              "description": "string"
+            },
+            "free": true,
+            "bindable": true,
+            "schemas": {
+              "service_instance": {
+                "create": {
+                  "parameters": {}
+                },
+                "update": {
+                  "parameters": {}
+                }
+              },
+              "service_binding": {
+                "create": {
+                  "parameters": {}
+                }
+              }
+            },
+            "maximum_polling_duration": 0,
+            "plan_updateable": true,
+            "binding_rotatable": false
+          },
+          {
+            "id": "plan1b",
+            "name": "advance",
+            "description": "An advance plan for REDIS",
             "metadata": {},
             "maintenance_info": {
               "version": "string",

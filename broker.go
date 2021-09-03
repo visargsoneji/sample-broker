@@ -23,7 +23,22 @@ var InstanceList = []Instance{
 }
 
 func GetCatalog(c *gin.Context) {
-	result := JSONReader("catalog.json")
+	URL := "https://api.jsonbin.io/b/6131ad47c4352e1d076802a3"
+	response, err := http.Get(URL) //use package "net/http"
+
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	defer response.Body.Close()
+
+	byteValue, _ := ioutil.ReadAll(response.Body)
+
+	var result map[string]interface{}
+	json.Unmarshal([]byte(byteValue), &result)
+
+	//result := JSONReader("catalog.json")
 	c.JSON(http.StatusOK, result)
 }
 
