@@ -17,6 +17,8 @@ spec:
       - name: broker-app-container
         image: visargsoneji/go-simple-broker
         imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 8080 # App listeining on this port inside container
         resources:
           limits:
             memory: 512Mi

@@ -7,7 +7,7 @@ spec:
   type: LoadBalancer
   ports:
   - name: http
-    port: 80  # The port on which we will actually use the app
-    targetPort: 8080 
+    port: 80  # Actually use the app via k8s
+    targetPort: 8080 # App listeining on this port inside container 
   selector:
     name: go-broker-app
