@@ -31,7 +31,7 @@ This will install dependencies as per `go.mod` file and start the web-app runnin
 ```
 kubectl apply -f deployment.yml
 ```
-#### deployment.yml
+##### deployment.yml
 ```
 ---
 apiVersion: apps/v1
@@ -64,7 +64,7 @@ spec:
 ```
 kubectl apply -f service.yml
 ```
-#### service.yml
+##### service.yml
 ```
 ---
 apiVersion: v1
@@ -97,7 +97,7 @@ PS: If you have deployed broker in the same cluster, its the ClusterIP.
 ```
 kubectl apply -f broker.yml
 ```
-#### broker.yml
+##### broker.yml
 ```
 apiVersion: servicecatalog.k8s.io/v1beta1
 kind: ClusterServiceBroker
@@ -128,7 +128,7 @@ kubectl create namespace test-ns
 ```
 kubectl apply -f instance.yml
 ```
-#### instance.yml
+##### instance.yml
 ```
 apiVersion: servicecatalog.k8s.io/v1beta1
 kind: ServiceInstance
@@ -150,7 +150,7 @@ This will internally hit the `GET` `/v2/service_instances/:instance_id`
 ```
 kubectl apply -f binding.yml
 ```
-#### binding.yml
+##### binding.yml
 ```
 apiVersion: servicecatalog.k8s.io/v1beta1
 kind: ServiceBinding
