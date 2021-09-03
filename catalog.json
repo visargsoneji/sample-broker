@@ -23,7 +23,7 @@
           {
             "id": "plan1a",
             "name": "basic",
-            "description": "A Basic plan for REDIS",
+            "description": "Basic plan for REDIS",
             "metadata": {},
             "maintenance_info": {
               "version": "string",
@@ -53,7 +53,7 @@
           {
             "id": "plan1b",
             "name": "advance",
-            "description": "An advance plan for REDIS",
+            "description": "Advance plan for REDIS",
             "metadata": {},
             "maintenance_info": {
               "version": "string",
