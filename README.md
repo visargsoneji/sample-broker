@@ -1,5 +1,5 @@
 # Sample-Broker
-This broker follows [OSB](https://github.com/openservicebrokerapi/servicebroker/blob/v2.16/spec.md) specifications to a simpler manner. 
+This broker follows [OSB](https://github.com/openservicebrokerapi/servicebroker/blob/v2.16/spec.md) specifications in a simple manner. 
 #### Note: This broker creates in-memory storage resources to handle the broker operations and not actual services.
 
 ## Contents
