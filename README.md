@@ -59,7 +59,7 @@ spec:
             memory: 512Mi
             cpu: "1"
 ```
-- This will create the `deployment` & `replicaset` resources. It will also start the pods.
+- This will create the `deployment` & `replicaset` resources. It will also start the `pods`.
 - Now, to expose the pods add `service` by running:
 ```
 kubectl apply -f service.yml
@@ -121,7 +121,7 @@ kubectl get clusterserviceplans
 ```
 This will internally hit the `GET` `/v2/catalog` endpoint of the broker.
 ### Provision
-- To Provision a service-instance, first we need to create a namespace and use it create instance in that namespace:
+- To Provision a service-instance, first we need to create a namespace and use it to create instance in that namespace:
 ```
 kubectl create namespace test-ns
 ```
@@ -146,7 +146,7 @@ svcat describe instance -n test-ns instance55
 ```
 This will internally hit the `GET` `/v2/service_instances/:instance_id` 
 ### Binding
-- To create a binding for your service instance using:
+- To create a binding for your service instance, use:
 ```
 kubectl apply -f binding.yml
 ```
