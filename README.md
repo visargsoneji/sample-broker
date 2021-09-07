@@ -5,7 +5,7 @@ This broker follows [OSB](https://github.com/openservicebrokerapi/servicebroker/
 ## Contents
 - [Local Set-up](#local-set-up)
 - [Deploy on K8s](#deploy-on-k8s)
-- [Register on svcat](#register-on-svcat)
+- [Register on svcat](#register-with-svcat)
   - [Install broker](#install-broker)
   - [Services](#services)
   - [Plans](#plans)
@@ -86,7 +86,7 @@ kubectl get service/go-broker-service
 ```
 Voila! Start hitting the OSB-API endpoints and monitor the logs inside pod.
 
-## Register on svcat
+## Register with svcat
 #### Pre-requisites
 - Follow this [guide](https://svc-cat.io/docs/install/) and make sure you have svcat installed along with its CLI.
 
